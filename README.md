@@ -56,13 +56,19 @@ _Con esto crearemos un nuevo Empleado._
 
 _Campos:_
 
-nombres *
-apellidos *
-tipoIdentificacion [nit, cc] *
-numeroIdentificacion *
-correoElectronico
-fechaIngreso
-salarioMensual *
+- nombres *
+
+- apellidos *
+
+- tipoIdentificacion [nit, cc] *
+
+- numeroIdentificacion *
+
+- correoElectronico
+
+- fechaIngreso
+
+- salarioMensual *
 
 *Requerido
 
@@ -90,10 +96,13 @@ http://[Server]/API/V1/telephones
 ```
 _Campos:_
 
-tipo [cell, tel]  : Cadena de texto *
-numero  : Cadena de texto *
-indicativo : Cadena de texto 
-personaId : Id entero *
+-tipo [cell, tel]  : Cadena de texto *
+
+-numero  : Cadena de texto *
+
+-indicativo : Cadena de texto 
+
+-personaId : Id entero *
 
 *Requerido
 
