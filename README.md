@@ -14,6 +14,7 @@ git clone https://github.com/jdcr1425/pruebaTecnicaRedProcesal.git
 ### Pre-requisitos 📋
 
 _Nodejs 12.18.3 o más actual_
+
 _Mysql 10.4.14-MariaDB o más actual_
 
 
@@ -32,7 +33,7 @@ PORT
 DB_HOST
 DB_USER 
 DB_PASSWORD
-DB_NAME = 
+DB_NAME  
 ```
 
 _Para ejecutar el servidor ejecutamos npm start_
@@ -48,7 +49,7 @@ _Ya después de esto deberiamos tener nuestro servidor escuhando peticiones_
 
 ##### Post
 
-##### Get
+##### Getgi
 
 ##### Update
 
