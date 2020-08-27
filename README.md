@@ -52,7 +52,19 @@ _Ya después de esto deberiamos tener nuestro servidor escuhando peticiones_
 ```
 http://[Server]/API/V1/employees
 ```
-Con esto crearemos un nuevo Empleado. 
+_Con esto crearemos un nuevo Empleado._ 
+
+_Campos:_
+
+nombres *
+apellidos *
+tipoIdentificacion [nit, cc] *
+numeroIdentificacion *
+correoElectronico
+fechaIngreso
+salarioMensual *
+
+*Requerido
 
 ##### Get
 ```
@@ -71,7 +83,33 @@ Con esto actualizaremos un empleado.
 
 ##### Post
 
+_Con esto crearemos un nuevo télefono para un empleado._ 
+
+```
+http://[Server]/API/V1/telephones
+```
+_Campos:_
+
+tipo [cell, tel]  : Cadena de texto *
+numero  : Cadena de texto *
+indicativo : Cadena de texto 
+personaId : Id entero *
+
+*Requerido
+
 ##### Get
 
+```
+http://[Server]/API/V1/telephones/<id_empleado>
+```
+
+_Con esto tendremos todos los télefonos de un empleado._
+
 ##### Delete
+
+```
+http://[Server]/API/V1/telephones/<id>
+```
+
+_Con esto borraremos un télefono de un empleado._
 
