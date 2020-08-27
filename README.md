@@ -49,9 +49,23 @@ _Ya después de esto deberiamos tener nuestro servidor escuhando peticiones_
 
 ##### Post
 
-##### Getgi
+```
+http://[Server]/API/V1/employees
+```
+Con esto crearemos un nuevo Empleado. 
+
+##### Get
+```
+http://[Server]/API/V1/employees
+```
+Con esto tendremos todos los empleados. 
 
 ##### Update
+
+```
+http://[Server]/API/V1/employees/<id>
+```
+Con esto actualizaremos un empleado. 
 
 #### Télefonos
 
