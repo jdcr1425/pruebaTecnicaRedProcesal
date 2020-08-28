@@ -26,7 +26,7 @@ _Después de estar en la raiz del proyecto ejecutamos npm install para instalar 
 ```
 npm install
 ```
-_Debemos configurar las variables de entorno:_
+_Debemos configurar las variables de entorno (se puede crear un archivo .env en la raiz de este proyecto):_
 
 ```
 PORT
@@ -35,6 +35,8 @@ DB_USER
 DB_PASSWORD
 DB_NAME  
 ```
+
+_Configurar con el puerto 3000 para correcto funcionamiento_
 
 _Para ejecutar el servidor ejecutamos npm start_
 ```
