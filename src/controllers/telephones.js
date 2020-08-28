@@ -8,9 +8,8 @@ const validateData = (body) => {
     if (!body.tipo) throw ("the type is required")
     if (!validator.equals(body.tipo, 'cell') && !validator.equals(body.tipo, 'tel')) throw ("the type is not valid");
     if (!body.numero) throw ("the number is required");
-    if (body.indicativo && !validator.isNumeric(body.indicativo)) throw ("the indicative is not valid");
+    if (body.indicativo && !validator.isNumeric(body.indicativo.toString())) throw ("the indicative is not valid");
     if (!body.personaId) throw ("the id employee is required");
-    if (!validator.isNumeric(body.personaId.toString())) throw ("the id employee is not valid");
 };
 
 const index = async(req, res) => {

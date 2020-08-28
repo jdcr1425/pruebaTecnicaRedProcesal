@@ -31,6 +31,27 @@ const index = async(req, res) => {
 
 }
 
+const one = async(req, res) => {
+    try {
+        const { id } = req.params;
+        const employee = await employeeRepository.getEmployee(id);
+
+        return res.status(200).json({
+            state: "ok",
+            data: {
+                employee
+            }
+        });
+    } catch (error) {
+        console.log(error)
+        return res.status(500).json({ state: "error", error })
+    }
+
+
+}
+
+
+
 const createEmployee = async(req, res) => {
     try {
         //Validating body input
@@ -83,4 +104,4 @@ const updateEmployee = async(req, res) => {
 
 
 
-module.exports = { index, createEmployee, updateEmployee }
+module.exports = { index, createEmployee, updateEmployee, one }
